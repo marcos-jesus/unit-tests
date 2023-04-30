@@ -16,7 +16,7 @@ describe('Should get users', () => {
     const mock = new MockAdapter(axios)
 
     mock.onGet('/users').reply(200, {
-      users: [
+      users: [ 
         { id: 1, name: 'Marcos'},
         { id: 2, name: 'Buddy'}
       ]
